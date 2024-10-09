@@ -181,7 +181,16 @@ chunkToString ( text, ruby ) =
         text
 
     else
-        "<ruby>" ++ text ++ "<rp>(</rp><rt>" ++ ruby ++ "</rt><rp>)</rp></ruby>"
+        let
+            rubied : String -> String
+            rubied input =
+                "<ruby>" ++ input ++ "<rp> (</rp><rt>" ++ ruby ++ "</rt><rp>)</rp></ruby>"
+        in
+        if String.endsWith " " text then
+            rubied (String.dropRight 1 text) ++ " "
+
+        else
+            rubied text
 
 
 update : Msg -> Model -> Model
