@@ -181,7 +181,7 @@ chunkToString ( text, ruby ) =
         text
 
     else
-        "<ruby>" ++ text ++ "<rp>(</rp><rt>" ++ ruby ++ "</rt><rp>)</rp></ruby>"
+        "<ruby>" ++ text ++ "<rp> (</rp><rt>" ++ ruby ++ "</rt><rp>)</rp></ruby>"
 
 
 update : Msg -> Model -> Model
