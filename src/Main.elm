@@ -141,17 +141,19 @@ viewChunk ( text, ruby ) =
                     fill
     in
     column [ spacing 2, width w ]
-        [ Input.text [ width w ]
+        [ Input.multiline [ width w ]
             { label = Input.labelHidden ""
             , text = ruby
             , onChange = \newRuby -> ( text, newRuby )
             , placeholder = Nothing
+            , spellcheck = False
             }
-        , Input.text [ width w ]
+        , Input.multiline [ width w ]
             { label = Input.labelHidden ""
             , text = text
             , onChange = \newText -> ( newText, ruby )
             , placeholder = Nothing
+            , spellcheck = False
             }
         ]
 
@@ -184,7 +186,8 @@ chunkToString ( text, ruby ) =
         let
             rubied : String -> String
             rubied input =
-                "<ruby>" ++ input ++ "<rp> (</rp><rt>" ++ ruby ++ "</rt><rp>)</rp></ruby>"
+                -- "<ruby style=\"ruby-align: center\">" ++ input ++ "<rp> (</rp><rt>" ++ ruby ++ "</rt><rp>)</rp></ruby>"
+                "<ruby style=\"ruby-align: start\">" ++ input ++ "<rp> (</rp><rt>" ++ ruby ++ "</rt><rp>)</rp></ruby>"
         in
         if String.endsWith " " text then
             rubied (String.dropRight 1 text) ++ " "
