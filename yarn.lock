@@ -57,24 +57,24 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-cross-spawn@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
-  integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
+cross-spawn@^7.0.6:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.6.tgz#8a58fe78f00dcd70c370451759dfbfaf03e8ee9f"
+  integrity sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==
   dependencies:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-elm-watch@^2.0.0-beta.3:
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/elm-watch/-/elm-watch-2.0.0-beta.3.tgz#3bb7f7952559c9e297734d87a283f0fb8e5b1496"
-  integrity sha512-rEi3cZiPgjnvmHX3toqUEwf+DJsGTqsMeNXVTGIC6POHyGjAXeyaUrp2RxMSrV6IS0hSBDu++KCBGO1tgJ/iew==
+elm-watch@^2.0.0-beta.6:
+  version "2.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/elm-watch/-/elm-watch-2.0.0-beta.6.tgz#33b31856de19276690715c3f8a495f1e312630d2"
+  integrity sha512-pb3qZVfoBMEWsfrP4mN760z85n5XC0cXg1JRR4ojAVZVjFMeDczYojLaKDQgP+qNeMAK52xj7s31+bCevT+X2Q==
   dependencies:
     chokidar "^3.5.3"
-    cross-spawn "^7.0.3"
-    tiny-decoders "^7.0.1"
-    ws "^8.12.0"
+    cross-spawn "^7.0.6"
+    tiny-decoders "^23.0.0"
+    ws "^8.18.0"
 
 elm@^0.19.1-6:
   version "0.19.1-6"
@@ -168,10 +168,10 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-tiny-decoders@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/tiny-decoders/-/tiny-decoders-7.0.1.tgz#ce80d377a214a5c46ffdd37b3b14f64e91215210"
-  integrity sha512-P1LaHTLASl/lCrdtwgAAVwxt4bEAPmxpf9HMQrlCkAseaT8oH8oxm8ndy4nx5rLTcL5U/Qxp1a+FDoQfS/ZgQQ==
+tiny-decoders@^23.0.0:
+  version "23.0.0"
+  resolved "https://registry.yarnpkg.com/tiny-decoders/-/tiny-decoders-23.0.0.tgz#49acf51455612c7729b04be6147fcea6d2a20f8b"
+  integrity sha512-gQB+za3EW9JN1ASDmrVl1a1I6Q/jzg4M75YLI9ToHCdCW4/9KvBTTNH4u3kFbg8e+/8Zn68VRF+ayuiPNqYAmg==
 
 to-regex-range@^5.0.1:
   version "5.0.1"
@@ -192,7 +192,7 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-ws@^8.12.0:
+ws@^8.18.0:
   version "8.18.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.0.tgz#0d7505a6eafe2b0e712d232b42279f53bc289bbc"
   integrity sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==

@@ -2,7 +2,7 @@
     "license": "MIT",
     "devDependencies": {
         "elm": "^0.19.1-6",
-        "elm-watch": "^2.0.0-beta.3",
+        "elm-watch": "^2.0.0-beta.6",
         "uglify-js": "^3.19.3"
     },
     "scripts": {
