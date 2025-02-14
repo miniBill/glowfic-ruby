@@ -141,19 +141,17 @@ viewChunk ( text, ruby ) =
                     fill
     in
     column [ spacing 2, width w ]
-        [ Input.multiline [ width w ]
+        [ Input.text [ width w ]
             { label = Input.labelHidden ""
             , text = ruby
             , onChange = \newRuby -> ( text, newRuby )
             , placeholder = Nothing
-            , spellcheck = False
             }
-        , Input.multiline [ width w ]
+        , Input.text [ width w ]
             { label = Input.labelHidden ""
             , text = text
             , onChange = \newText -> ( newText, ruby )
             , placeholder = Nothing
-            , spellcheck = False
             }
         ]
 
